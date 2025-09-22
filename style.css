@@ -1,4 +1,49 @@
-/* Contact Buttons */
+/* ---------------- General Styles ---------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------------- Header ---------------- */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* ---------------- Navigation Links ---------------- */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    background-color: #004080; /* dark blue */
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #0059b3; /* lighter blue on hover */
+    transform: translateY(-2px); /* subtle lift effect */
+}
+
+/* ---------------- Contact Buttons (Index Only) ---------------- */
 .contact-info a {
     display: inline-block;
     padding: 8px 15px;
@@ -7,13 +52,14 @@
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
-    color: white; /* text color */
+    color: white;
 }
 
 /* LinkedIn button */
 .contact-info a[href*="linkedin.com"] {
     background-color: #0073b1; /* LinkedIn blue */
 }
+
 .contact-info a[href*="linkedin.com"]:hover {
     background-color: #005582; /* darker on hover */
 }
@@ -22,6 +68,99 @@
 .contact-info a[href^="mailto:"] {
     background-color: #28a745; /* green */
 }
+
 .contact-info a[href^="mailto:"]:hover {
     background-color: #1e7e34; /* darker green on hover */
+}
+
+/* ---------------- Main Content ---------------- */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Sections (Projects & Hobbies) */
+section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section img {
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+section h2, section h3 {
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5em;
+    max-width: 700px;
+    margin: auto 0 15px 0;
+}
+
+section ul {
+    text-align: left;
+    max-width: 600px;
+    margin: auto 0 15px 0;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+/* ---------------- Profile Picture ---------------- */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004080;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ---------------- Headings ---------------- */
+h1, h2 {
+    text-align: center;
+    color: #004080;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* ---------------- Images ---------------- */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ---------------- Responsive Adjustments ---------------- */
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section img {
+        max-width: 90%;
+    }
 }
