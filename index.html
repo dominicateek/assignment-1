@@ -6,25 +6,90 @@
     <title>Dominic Ateek | Résumé</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
         header {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .contact-info {
             font-size: 0.9em;
-            margin-top: 5px;
+            margin-top: 10px;
         }
+
         .contact-info a {
-            color: blue;
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
             text-decoration: none;
-            margin-left: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            transition: background-color 0.3s;
         }
+
+        .contact-info a[href^="mailto:"] {
+            background-color: #28a745; /* green */
+        }
+
+        .contact-info a[href^="mailto:"]:hover {
+            background-color: #1e7e34;
+        }
+
+        .contact-info a[href*="linkedin.com"] {
+            background-color: #0073b1; /* LinkedIn blue */
+        }
+
+        .contact-info a[href*="linkedin.com"]:hover {
+            background-color: #005582;
+        }
+
         .profile-pic {
             max-width: 150px;
             border-radius: 50%;
+            display: block;
+            margin: 15px auto;
         }
+
         main section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        main section h2 {
+            margin-bottom: 15px;
+            color: #004080;
+        }
+
+        main section p {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.5em;
+            max-width: 700px;
+            margin: auto 0 15px 0;
+        }
+
+        main section ul {
+            list-style-type: square;
+            max-width: 600px;
+            margin: auto 0 15px 0;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #004080;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -49,7 +114,7 @@
             <h2>Résumé Overview</h2>
             <p>Hello! I am a Computer Science student at Oakland University. I am passionate about software development, web design, and learning new technologies.</p>
             <ul>
-                <li>Skills: HTML, CSS, Java, Python</li>
+                <li>Skills: HTML, C++, Java, Python</li>
                 <li>Willing to learn: React, Node.js, AI Development</li>
                 <li>Education: Oakland University, CS Major</li>
             </ul>
