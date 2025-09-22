@@ -12,6 +12,28 @@
             padding: 20px;
         }
 
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            background-color: #004080;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #0059b3;
+            transform: translateY(-2px);
+        }
+
         section {
             text-align: center;
             margin-bottom: 40px;
@@ -26,6 +48,7 @@
 
         section h3 {
             margin: 10px 0 5px 0;
+            color: #004080;
         }
 
         section p {
@@ -33,7 +56,18 @@
             color: #555;
             line-height: 1.5em;
             max-width: 600px;
-            margin: auto 0 15px 0;
+            margin: 10px auto 15px auto;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #004080;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -50,30 +84,23 @@
     <main>
         <h2 style="text-align:center; margin-bottom:30px;">My Hobbies</h2>
 
-        <!-- Gym -->
         <section>
             <img src="images/gym.jpeg" alt="Gym">
             <h3>The Gym</h3>
-            <p>Going to the gym relaxes my mind, helps me build discipline, and keeps me healthy.  
-            I enjoy setting personal fitness goals and pushing myself to improve strength, endurance, and overall wellness. It’s a great way to clear my head and stay focused both physically and mentally.</p>
+            <p>Going to the gym relaxes my mind, helps me build discipline, and keeps me healthy. I enjoy setting personal fitness goals and pushing myself to improve strength, endurance, and overall wellness. It’s a great way to clear my head and stay focused both physically and mentally.</p>
         </section>
 
-        <!-- Basketball -->
         <section>
             <img src="images/basketball.jpeg" alt="Basketball">
             <h3>Basketball</h3>
-            <p>Playing basketball gives me excellent cardio and allows me to have fun while staying active.  
-            I am very competitive when I play and it helps bring that part of me out. Basketball also helps me build my teamworking skills.</p>
+            <p>Playing basketball gives me excellent cardio and allows me to have fun while staying active. I am very competitive when I play and it helps bring that part of me out. Basketball also helps me build my teamworking skills.</p>
         </section>
 
-        <!-- Hanging out with friends -->
         <section>
             <img src="images/friends.jpeg" alt="Hanging Out with Friends">
             <h3>Hanging Out with Friends</h3>
-            <p>Spending time with friends makes me happy and helps relieve stress.  
-            Whether it’s going out to eat, playing games, or watching sports games, these moments help me a lot mentally, strengthen relationships, and create lasting memories.</p>
+            <p>Spending time with friends makes me happy and helps relieve stress. Whether it’s going out to eat, playing games, or watching sports games, these moments help me a lot mentally, strengthen relationships, and create lasting memories.</p>
         </section>
-
     </main>
 
     <footer>
