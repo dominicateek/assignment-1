@@ -1,27 +1,83 @@
-<section>
-    <h2>My Hobbies</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Dominic Ateek</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
 
-    <!-- Gym -->
-    <div style="text-align:center; margin-bottom:30px;">
-        <img src="images/gym.jpg" alt="Gym" style="max-width:300px; border-radius:10px; border:1px solid #ccc;">
-        <h3>The Gym</h3>
-        <p>Going to the gym relaxes my mind, helps me build discipline, and keeps me healthy.  
-        I enjoy setting personal fitness goals and pushing myself to improve strength, endurance, and overall wellness. It’s a great way to clear my head and stay focused both physically and mentally.</p>
-    </div>
+        section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-    <!-- Basketball -->
-    <div style="text-align:center; margin-bottom:30px;">
-        <img src="images/basketball.jpg" alt="Basketball" style="max-width:300px; border-radius:10px; border:1px solid #ccc;">
-        <h3>Basketball</h3>
-        <p>Playing basketball gives me excellent cardio and allows me to have fun while staying active.  
-        I am very competitive when I play and it helps bring that part of me out. Basketball also helps me build my teamworking skills.</p>
-    </div>
+        section img {
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
 
-    <!-- Hanging out with friends -->
-    <div style="text-align:center; margin-bottom:30px;">
-        <img src="images/friends.jpg" alt="Hanging Out with Friends" style="max-width:300px; border-radius:10px; border:1px solid #ccc;">
-        <h3>Hanging Out with Friends</h3>
-        <p>Spending time with friends makes me happy and helps relieve stress.  
-        Whether it’s going out to eat, playing games, or watching sports games, these moments help me a lot mentally, strengthen relationships, and create lasting memories.</p>
-    </div>
-</section>
+        section h3 {
+            margin: 10px 0 5px 0;
+        }
+
+        section p {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.5em;
+            max-width: 600px;
+            margin: auto 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dominic Ateek</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="hobbies.html">Hobbies</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align:center; margin-bottom:30px;">My Hobbies</h2>
+
+        <!-- Gym -->
+        <section>
+            <img src="images/gym.jpg" alt="Gym">
+            <h3>The Gym</h3>
+            <p>Going to the gym relaxes my mind, helps me build discipline, and keeps me healthy.  
+            I enjoy setting personal fitness goals and pushing myself to improve strength, endurance, and overall wellness. It’s a great way to clear my head and stay focused both physically and mentally.</p>
+        </section>
+
+        <!-- Basketball -->
+        <section>
+            <img src="images/basketball.jpg" alt="Basketball">
+            <h3>Basketball</h3>
+            <p>Playing basketball gives me excellent cardio and allows me to have fun while staying active.  
+            I am very competitive when I play and it helps bring that part of me out. Basketball also helps me build my teamworking skills.</p>
+        </section>
+
+        <!-- Hanging out with friends -->
+        <section>
+            <img src="images/friends.jpg" alt="Hanging Out with Friends">
+            <h3>Hanging Out with Friends</h3>
+            <p>Spending time with friends makes me happy and helps relieve stress.  
+            Whether it’s going out to eat, playing games, or watching sports games, these moments help me a lot mentally, strengthen relationships, and create lasting memories.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Dominic Ateek
+    </footer>
+</body>
+</html>
