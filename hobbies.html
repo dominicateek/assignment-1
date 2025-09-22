@@ -17,6 +17,38 @@
             margin-bottom: 20px;
         }
 
+        .contact-info {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .contact-info a {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .contact-info a[href^="mailto:"] {
+            background-color: #28a745; 
+        }
+
+        .contact-info a[href^="mailto:"]:hover {
+            background-color: #1e7e34;
+        }
+
+        .contact-info a[href*="linkedin.com"] {
+            background-color: #0073b1; 
+        }
+
+        .contact-info a[href*="linkedin.com"]:hover {
+            background-color: #005582;
+        }
+
         nav a {
             display: inline-block;
             color: white;
